@@ -26,19 +26,20 @@ const LoginSignup = () => {
 
     const [
         signInWithEmailAndPassword,
-      ] = useSignInWithEmailAndPassword(auth);
+    ] = useSignInWithEmailAndPassword(auth);
 
-    function handleSignUp(e){
+    function handleSignUp(e) {
         createUserWithEmailAndPassword(email, password);
+        if (user) {
+            console.log(user);
+        }
     }
 
-    function handleSignIn(e){
+    function handleSignIn(e) {
         signInWithEmailAndPassword(email, password);
-    }
-
-    if(user)
-    {
-        console.log(user);
+        if (user) {
+            console.log(user);
+        }
     }
 
     return (
@@ -53,15 +54,15 @@ const LoginSignup = () => {
                 {/* Renderiza o campo de nome somente se a ação não for "Login" */}
                 {action === "Login" ? <div></div> : <div className="input">
                     <img src={person} alt="" />
-                    <input type="text" placeholder='Nome'/>
+                    <input type="text" placeholder='Nome' />
                 </div>}
                 <div className="input">
                     <img src={email_icon} alt="" />
-                    <input type="email" placeholder='E-mail' onChange={(e) => setEmail(e.target.value)}/>
+                    <input type="email" placeholder='E-mail' onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <div className="input">
                     <img src={password_icon} alt="" />
-                    <input type="password" placeholder='Senha' onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="password" placeholder='Senha' onChange={(e) => setPassword(e.target.value)} />
                 </div>
             </div>
             {/* Renderiza a mensagem "Esqueceu a senha?" somente se a ação for "Login" */}
@@ -69,11 +70,11 @@ const LoginSignup = () => {
             {/* Seção dos botões de ação */}
             <div className="submit-container">
                 {/* Botão de "Cadastre-se" */}
-                <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => {setAction("Cadastre-se"), handleSignUp()}}>
+                <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => { if (action === "Cadastre-se") handleSignUp(); setAction("Cadastre-se") }}>
                     Cadastre-se
                 </div>
                 {/* Botão de "Login" */}
-                <div className={action === "Cadastre-se" ? "submit gray" : "submit"} onClick={() => {setAction("Login"), handleSignIn()}}>
+                <div className={action === "Cadastre-se" ? "submit gray" : "submit"} onClick={() => { if (action === "Login") handleSignIn(); setAction("Login") }}>
                     Login
                 </div>
             </div>
