@@ -121,10 +121,10 @@ export default LoginSignup;
     display: flex;
     flex-direction: column; /* Alinha os itens verticalmente */
     margin: auto; /* Centraliza o contêiner horizontalmente */
-    width: 600px; /* Define a largura do contêiner */
-    margin-top: 200px; /* Define a margem superior do contêiner */
+    width: 480px; /* Define a largura do contêiner */
+    margin-top: 100px; /* Define a margem superior do contêiner */
     background: #fff; /* Define a cor de fundo do contêiner */
-    padding-bottom: 30px; /* Define o preenchimento inferior do contêiner */
+    padding-bottom: 20px; /* Define o preenchimento inferior do contêiner */
     border-radius: 5px; /* Adiciona bordas arredondadas ao contêiner */
 }
 
@@ -133,32 +133,32 @@ export default LoginSignup;
     display: flex;
     flex-direction: column; /* Alinha os itens verticalmente */
     align-items: center; /* Centraliza os itens horizontalmente */
-    gap: 9px; /* Espaço entre os itens */
+    gap: 6px; /* Espaço entre os itens */
     width: 100%; /* Define a largura do cabeçalho */
-    margin-top: 30px; /* Define a margem superior do cabeçalho */
+    margin-top: 20px; /* Define a margem superior do cabeçalho */
 }
 
 /* Estilo do texto do cabeçalho */
 .text {
     color: #3c009d; /* Define a cor do texto */
-    font-size: 48px; /* Define o tamanho da fonte */
+    font-size: 36px; /* Define o tamanho da fonte */
     font-weight: 700; /* Define o peso da fonte */
 }
 
 /* Estilo da linha embaixo do texto */
 .underline {
-    width: 61px; /* Define a largura da linha */
-    height: 6px; /* Define a altura da linha */
+    width: 45px; /* Define a largura da linha */
+    height: 4px; /* Define a altura da linha */
     background: #3c009d; /* Define a cor de fundo da linha */
     border-radius: 9px; /* Adiciona bordas arredondadas à linha */
 }
 
 /* Estilo dos campos de entrada */
 .inputs {
-    margin-top: 55px; /* Define a margem superior dos campos de entrada */
+    margin-top: 40px; /* Define a margem superior dos campos de entrada */
     display: flex;
     flex-direction: column; /* Alinha os itens verticalmente */
-    gap: 25px; /* Espaço entre os campos */
+    gap: 18px; /* Espaço entre os campos */
 }
 
 /* Estilo individual de cada campo de entrada */
@@ -166,34 +166,34 @@ export default LoginSignup;
     display: flex;
     align-items: center; /* Alinha os itens verticalmente no centro */
     margin: auto; /* Centraliza o campo horizontalmente */
-    width: 480px; /* Define a largura do campo */
-    height: 80px; /* Define a altura do campo */
+    width: 380px; /* Define a largura do campo */
+    height: 60px; /* Define a altura do campo */
     background: #eaeaea; /* Define a cor de fundo do campo */
     border-radius: 6px; /* Adiciona bordas arredondadas ao campo */
 }
 
 /* Estilo das imagens dentro dos campos de entrada */
 .input img {
-    margin: 0px 30px; /* Define a margem ao redor da imagem */
+    margin: 0px 20px; /* Define a margem ao redor da imagem */
 }
 
 /* Estilo dos inputs dentro dos campos de entrada */
 .input input {
-    height: 50px; /* Define a altura do input */
-    width: 400px; /* Define a largura do input */
+    height: 40px; /* Define a altura do input */
+    width: 300px; /* Define a largura do input */
     background: transparent; /* Define o fundo transparente do input */
     border: none; /* Remove a borda do input */
     outline: none; /* Remove o contorno do input */
     color: #797979; /* Define a cor do texto do input */
-    font-size: 19px; /* Define o tamanho da fonte do input */
+    font-size: 16px; /* Define o tamanho da fonte do input */
 }
 
 /* Estilo da mensagem de "Esqueceu a senha?" */
 .forgot-password {
-    padding-left: 62px; /* Define o preenchimento à esquerda da mensagem */
-    margin-top: 27px; /* Define a margem superior da mensagem */
+    padding-left: 45px; /* Define o preenchimento à esquerda da mensagem */
+    margin-top: 20px; /* Define a margem superior da mensagem */
     color: #797979; /* Define a cor do texto da mensagem */
-    font-size: 18px; /* Define o tamanho da fonte da mensagem */
+    font-size: 14px; /* Define o tamanho da fonte da mensagem */
 }
 
 /* Estilo do texto clicável dentro da mensagem de "Esqueceu a senha?" */
@@ -205,8 +205,8 @@ export default LoginSignup;
 /* Estilo do contêiner dos botões de ação */
 .submit-container {
     display: flex;
-    gap: 30px; /* Espaço entre os botões */
-    margin: 60px auto; /* Define a margem superior e centraliza o contêiner horizontalmente */
+    gap: 20px; /* Espaço entre os botões */
+    margin: 40px auto; /* Define a margem superior e centraliza o contêiner horizontalmente */
 }
 
 /* Estilo dos botões de ação */
@@ -214,12 +214,12 @@ export default LoginSignup;
     display: flex;
     justify-content: center; /* Alinha o texto horizontalmente no centro */
     align-items: center; /* Alinha o texto verticalmente no centro */
-    width: 220px; /* Define a largura do botão */
-    height: 59px; /* Define a altura do botão */
+    width: 180px; /* Define a largura do botão */
+    height: 45px; /* Define a altura do botão */
     color: #fff; /* Define a cor do texto do botão */
     background: #4c00b4; /* Define a cor de fundo do botão */
     border-radius: 50px; /* Adiciona bordas arredondadas ao botão */
-    font-size: 19px; /* Define o tamanho da fonte do botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
     font-weight: 700; /* Define o peso da fonte do botão */
     cursor: pointer; /* Define o cursor como uma mão para indicar que o botão é clicável */
 }
