@@ -1,0 +1,29 @@
+/* Estiliza o fundo para ocupar toda a tela */
+.background {
+    height: 100%; /* Define a altura do fundo para 100% da altura da tela */
+    width: 100%; /* Define a largura do fundo para 100% da largura da tela */
+    float: left; /* Flutua o elemento para a esquerda */
+    top: 0; /* Define a posição superior do fundo para 0 */
+    left: 0; /* Define a posição esquerda do fundo para 0 */
+    right: 0; /* Define a posição direita do fundo para 0 */
+    bottom: 0; /* Define a posição inferior do fundo para 0 */
+    padding: none; /* Remove qualquer preenchimento */
+    position: fixed; /* Fixar o fundo para que ele não se mova ao rolar a página */
+    object-fit: cover; /* Faz com que o conteúdo do fundo cubra completamente o elemento, mantendo a proporção */
+    z-index: -1; /* Define o índice z para que o fundo fique atrás dos outros conteúdos */
+}
+
+/* Define a animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Começa com opacidade 0 (invisível) */
+    }
+    to {
+        opacity: 1; /* Termina com opacidade 1 (visível) */
+    }
+}
+
+/* Aplica a animação de fade-in ao elemento */
+.fade-in {
+    animation: fadeIn 500ms ease-in-out; /* Define a duração da animação para 500ms e a curva de velocidade como ease-in-out */
+}
