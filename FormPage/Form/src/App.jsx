@@ -1,11 +1,10 @@
 import React from 'react'
-import LoginSignup from './components/LoginSignup'
+import AppRoutes from './routes/AppRoutes'
 
 const App = () => {
   return (
     <div>
-      {/* Renderizando o componente LoginSignup*/}
-      <LoginSignup />
+      <AppRoutes />
     </div>
   )
 }
